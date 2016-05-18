@@ -90,65 +90,6 @@ body {
   right: 15px;
 }
 
-/*
-.phone .user .user-menu {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  top: 0px;
-  right: 4px;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  border: 4px solid #D6798B;
-  background: rgba(214, 121, 139, 0.95);
-  box-shadow: 2px 2px 2px rgba(61, 69, 74, 0.5);
-  -webkit-transition: height 0.15s ease-in-out;
-  transition: height 0.15s ease-in-out;
-}
-/*
-.phone .user .user-menu .plus {
-  margin: 50px auto 0 auto;
-  color: rgba(238, 238, 238, 0.92);
-  font-size: 2em;
-  height: 30px;
-  width: 30px;
-  padding: 3px;
-  border-radius: 50%;
-  verticle-align: middle;
-  text-shadow: 1px 1px 2px rgba(61, 69, 74, 0.3);
-}
-.phone .user .user-menu .plus:hover {
-  cursor: pointer;
-}
-.phone .user .um-height {
-  height: 96px;
-  -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out;
-}
-/*
-.phone .user .profile-pic {
-  display: block;
-  position: fixed;
-  top: 5px;
-  right: 12.5px;
-  /*background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg);
-  background-size: cover;
-  text-align: centre;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 4px solid #D6798B;
-  box-shadow: 2px 2px 2px rgba(61, 69, 74, 0.3);
-}
-*/
-/*
-.phone .user .profile-pic:hover {
-  border-color: #d0657a;
-  cursor: pointer;
-}
-*/
 
 .phone .options {
   display: block;
