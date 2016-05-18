@@ -106,6 +106,7 @@ body {
   -webkit-transition: height 0.15s ease-in-out;
   transition: height 0.15s ease-in-out;
 }
+/*
 .phone .user .user-menu .plus {
   margin: 50px auto 0 auto;
   color: rgba(238, 238, 238, 0.92);
