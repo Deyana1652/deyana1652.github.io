@@ -2,9 +2,18 @@ $c1: #5C5B75
 $c2: #D6798B
 $drk: #3D454A
 
-body { 
+body {
    background: linear-gradient($c1, $c2) no-repeat
    height: 100vh
    overflow: hidden
    perspective: 700px
+}
+
+.nav {
+      height: 50px
+      background: $drk
+      padding: 3px
+      position: absolute
+      width: 100%
+      z-index: 999
 }
