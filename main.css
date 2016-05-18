@@ -137,7 +137,7 @@ body {
   position: fixed;
   top: 5px;
   right: 12.5px;
-  background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg);
+  background: url("dey.jpg") no-repeat;
   background-size: cover;
   text-align: centre;
   height: 40px;
