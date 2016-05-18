@@ -159,3 +159,7 @@ body {
 .phone .content .info {
   display: block;
 }
+
+.footer {
+  font-size: 20px;
+}
