@@ -69,10 +69,12 @@ body {
           transform: rotate(180deg);
   opacity: 0;
 }
+/*
 .phone .logo {
   display: block;
   text-align: center;
 }
+*/
 .phone .logo h1 {
   font-family: "Lily Script One", cursive;
   font-size: 2.2em;
