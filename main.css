@@ -137,7 +137,7 @@ body {
   position: fixed;
   top: 5px;
   right: 12.5px;
-  background: url("dey.jpg") no-repeat;
+  background: url("dey.jpg");
   background-size: cover;
   text-align: centre;
   height: 40px;
