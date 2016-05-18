@@ -82,14 +82,14 @@ body {
   padding: 0;
   color: #eee;
 }
-/*
+
 .phone .user {
   box-sizing: border-box;
   position: absolute;
   top: 5px;
   right: 15px;
 }
-*/
+
 .phone .user .user-menu {
   position: relative;
   display: block;
@@ -130,7 +130,7 @@ body {
   position: fixed;
   top: 5px;
   right: 12.5px;
-  background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg);
+  /*background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg);*/
   background-size: cover;
   text-align: centre;
   height: 40px;
