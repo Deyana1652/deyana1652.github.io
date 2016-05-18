@@ -1,3 +1,7 @@
+$c1: #5C5B75
+$c2: #D6798B
+$drk: #3D454A
+
 body { 
    background: linear-gradient($c1, $c2) no-repeat
    height: 100vh
