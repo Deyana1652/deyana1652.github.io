@@ -1,201 +1,208 @@
-@import url(https://fonts.googleapis.com/css?family=Lily+Script+One)
-
-$c1: #5C5B75
-$c2: #D6798B
-$drk: #3D454A
-
-body{
-   background: linear-gradient($c1, $c2) no-repeat
-   height: 100vh
-   overflow: hidden
-   perspective: 700px
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+body {
+  background: -webkit-linear-gradient(#5C5B75, #D6798B) no-repeat;
+  background: linear-gradient(#5C5B75, #D6798B) no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: 700px;
+          perspective: 700px;
 }
 
 .phone {
-   width: 375px
-   height: 667px
-   position: absolute
-   top: 50%
-   left: 50%
-   margin: 10px auto
-   box-shadow: 5px 5px 10px rgba(black, .3)
-   border-radius: 5px
-   background: #fff
-   overflow: hidden
-   transform-style: preserve-3d
-   transform: translate(-50%, -50%)
-   transition: all 1s ease-in-out
-}  
-
-   //.loader
-      background: linear-gradient($c1, $c2)
-      position: absolute
-      height: 100%
-      width: 100%
-   
-   .nav {
-      height: 50px
-      background: $drk
-      padding: 3px
-      position: absolute
-      width: 100%
-      z-index: 999
-   }   
-   
-      .burger 
-         /*more hamburgers here: "http://codepen.io/Ridyal/pen/xwgQOo" */
-         display: block
-         position: absolute
-         width: 40px
-         padding: 5px
-         &:hover
-            cursor: pointer
-
-         .bar
-            height: 5px
-            width: 100%
-            background: #eee
-            transition: all 0.3s ease-in-out
-            margin: 5px
-            border-radius: 5px
-            &:hover
-               cursor: pointer
-      
-      .multiply
-         .bar:first-child
-            transform: translateY( 10px ) rotate( -45deg )
-         .bar:last-child
-            transform: translateY( -10px ) rotate( 45deg )
-         .bar:nth-child(2)
-            transform: rotate( 180deg )
-            opacity: 0
-            
-   .logo
-      display: block
-      text-align: center
-      h1
-         font-family: 'Lily Script One', cursive
-         font-size: 2.2em
-         margin: 0
-         padding: 0
-         color: #eee
-         
-   // I would love to redo this withou absolute positioning      
-   .user
-      box-sizing: border-box
-      position: absolute
-      top: 5px
-      right: 15px
-       
-      .user-menu
-         position: relative
-         display: block
-         overflow: hidden
-         text-align: center
-         top: 0px
-         right: 4px
-         width: 40px
-         height: 40px
-         border-radius: 40px
-         border: 4px solid $c2
-         background: rgba($c2,.95)
-         box-shadow: 2px 2px 2px rgba($drk,.5)
-         transition: height .15s ease-in-out
-         
-         .plus
-            margin: 50px auto 0 auto
-            color: rgba(#eee, .92)
-            font-size: 2em
-            height: 30px
-            width: 30px
-            padding: 3px
-            border-radius: 50%
-            verticle-align: middle
-            text-shadow: 1px 1px 2px rgba($drk,.3)
-            &:hover
-               cursor: pointer
-            
-         
-      .um-height
-         height: 96px
-         transition: height .2s ease-in-out
-         
-      .profile-pic
-         display: block
-         position: fixed
-         top: 5px
-         right: 12.5px
-         background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg)
-         background-size: cover
-         text-align: centre
-         height: 40px
-         width: 40px
-         border-radius: 50%
-         border: 4px solid $c2
-         box-shadow: 2px 2px 2px rgba($drk,.3)
-         &:hover
-            border-color: darken($c2, 5%)     
-            cursor: pointer
-            
-   .options
-      display: block
-      list-style: none
-      width: 100%
-      margin: 50px 0 0 0
-      padding: 0
-      box-shadow: 0 5px 2px rgba(#000, .2)
-      
-      .option
-         display: block
-         width: 100%
-         padding: 20px
-         color: #eee
-         box-shadow: inset 0 5px 2px rgba(#000, .2)
-         text-align: center
-         font-weight: 700
-         letter-spacing: 2px
-         box-sizing: border-box
-         transition: background-color .2s ease-in-out
-         a
-            text-decoration: none
-            color: inherit
-      
-      .option:nth-child(odd)
-         background: #C17487
-         &:hover
-            background: darken($c2, 5%)
-      .option:nth-child(even)
-         background: #675E77
-         &:hover
-            background: darken($c1, 5%)
-      
-   .pic
-      display: block
-      background: url("http://viewhdwallpaper.com/wp-content/uploads/2013/12/Cupcakes-Photography-HD-Wallpaper-1024x575.png") no-repeat
-      background-size: cover
-      height: 174px
-      
-      .pic-color
-         height: 100%
-         width: 100%
-         background: linear-gradient($c1, $c2) no-repeat
-         opacity: .5
-         box-shadow: inset 0 5px 2px rgba(#000, .2), 0 5px 2px rgba(#000, .2)
-         
-   .content
-      height: 450px
-      padding: 0 15px
-      line-height: 140%
-      color: rgba(#000, .86)
-      overflow: scroll
-      &::-webkit-scrollbar
-         width: .5em
-      &::-webkit-scrollbar-thumb
-         background-color: lighten($drk, 50%)
-      
-      .info
-         display: block
-            
-       
-   
-   
+  width: 375px;
+  height: 667px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 10px auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.phone .nav {
+  height: 50px;
+  background: #3D454A;
+  padding: 3px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.phone .nav .burger {
+  /*more hamburgers here: "http://codepen.io/Ridyal/pen/xwgQOo" */
+  display: block;
+  position: absolute;
+  width: 40px;
+  padding: 5px;
+}
+.phone .nav .burger:hover {
+  cursor: pointer;
+}
+.phone .nav .burger .bar {
+  height: 5px;
+  width: 100%;
+  background: #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+  border-radius: 5px;
+}
+.phone .nav .burger .bar:hover {
+  cursor: pointer;
+}
+.phone .nav .multiply .bar:first-child {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+          transform: translateY(10px) rotate(-45deg);
+}
+.phone .nav .multiply .bar:last-child {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+          transform: translateY(-10px) rotate(45deg);
+}
+.phone .nav .multiply .bar:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0;
+}
+.phone .logo {
+  display: block;
+  text-align: center;
+}
+.phone .logo h1 {
+  font-family: "Lily Script One", cursive;
+  font-size: 2.2em;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+}
+.phone .user {
+  box-sizing: border-box;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+.phone .user .user-menu {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  top: 0px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 4px solid #D6798B;
+  background: rgba(214, 121, 139, 0.95);
+  box-shadow: 2px 2px 2px rgba(61, 69, 74, 0.5);
+  -webkit-transition: height 0.15s ease-in-out;
+  transition: height 0.15s ease-in-out;
+}
+.phone .user .user-menu .plus {
+  margin: 50px auto 0 auto;
+  color: rgba(238, 238, 238, 0.92);
+  font-size: 2em;
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  border-radius: 50%;
+  verticle-align: middle;
+  text-shadow: 1px 1px 2px rgba(61, 69, 74, 0.3);
+}
+.phone .user .user-menu .plus:hover {
+  cursor: pointer;
+}
+.phone .user .um-height {
+  height: 96px;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+.phone .user .profile-pic {
+  display: block;
+  position: fixed;
+  top: 5px;
+  right: 12.5px;
+  background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg);
+  background-size: cover;
+  text-align: centre;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid #D6798B;
+  box-shadow: 2px 2px 2px rgba(61, 69, 74, 0.3);
+}
+.phone .user .profile-pic:hover {
+  border-color: #d0657a;
+  cursor: pointer;
+}
+.phone .options {
+  display: block;
+  list-style: none;
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 0;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.phone .options .option {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: #eee;
+  box-shadow: inset 0 5px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.phone .options .option a {
+  text-decoration: none;
+  color: inherit;
+}
+.phone .options .option:nth-child(odd) {
+  background: #C17487;
+}
+.phone .options .option:nth-child(odd):hover {
+  background: #d0657a;
+}
+.phone .options .option:nth-child(even) {
+  background: #675E77;
+}
+.phone .options .option:nth-child(even):hover {
+  background: #515067;
+}
+.phone .pic {
+  display: block;
+  background: url("http://viewhdwallpaper.com/wp-content/uploads/2013/12/Cupcakes-Photography-HD-Wallpaper-1024x575.png") no-repeat;
+  background-size: cover;
+  height: 174px;
+}
+.phone .pic .pic-color {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#5C5B75, #D6798B) no-repeat;
+  background: linear-gradient(#5C5B75, #D6798B) no-repeat;
+  opacity: 0.5;
+  box-shadow: inset 0 5px 2px rgba(0, 0, 0, 0.2), 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.phone .content {
+  height: 450px;
+  padding: 0 15px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.86);
+  overflow: scroll;
+}
+.phone .content::-webkit-scrollbar {
+  width: 0.5em;
+}
+.phone .content::-webkit-scrollbar-thumb {
+  background-color: #bdc4c9;
+}
+.phone .content .info {
+  display: block;
+}
