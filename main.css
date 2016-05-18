@@ -83,12 +83,13 @@ body {
   color: #eee;
 }
 
+/*
 .phone .user {
   box-sizing: border-box;
   position: absolute;
   top: 5px;
   right: 15px;
-}
+}*/
 
 
 .phone .options {
