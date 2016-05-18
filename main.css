@@ -1,19 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One)
+
 $c1: #5C5B75
 $c2: #D6798B
 $drk: #3D454A
 
-body {
+body
    background: linear-gradient($c1, $c2) no-repeat
    height: 100vh
    overflow: hidden
    perspective: 700px
-}
 
-.nav {
+.phone
+   width: 375px
+   height: 667px
+   position: absolute
+   top: 50%
+   left: 50%
+   margin: 10px auto
+   box-shadow: 5px 5px 10px rgba(black, .3)
+   border-radius: 5px
+   background: #fff
+   overflow: hidden
+   transform-style: preserve-3d
+   transform: translate(-50%, -50%)
+   transition: all 1s ease-in-out
+   
+   //.loader
+      background: linear-gradient($c1, $c2)
+      position: absolute
+      height: 100%
+      width: 100%
+   
+   .nav
       height: 50px
       background: $drk
       padding: 3px
       position: absolute
       width: 100%
       z-index: 999
-}
+      
+      .burger 
+         /*more hamburgers here: "http://codepen.io/Ridyal/pen/xwgQOo" */
+         display: block
+         position: absolute
+         width: 40px
+         padding: 5px
+         &:hover
+            cursor: pointer
+
+         .bar
+            height: 5px
+            width: 100%
+            background: #eee
+            transition: all 0.3s ease-in-out
+            margin: 5px
+            border-radius: 5px
+            &:hover
+               cursor: pointer
+      
+      .multiply
+         .bar:first-child
+            transform: translateY( 10px ) rotate( -45deg )
+         .bar:last-child
+            transform: translateY( -10px ) rotate( 45deg )
+         .bar:nth-child(2)
+            transform: rotate( 180deg )
+            opacity: 0
+            
+   .logo
+      display: block
+      text-align: center
+      h1
+         font-family: 'Lily Script One', cursive
+         font-size: 2.2em
+         margin: 0
+         padding: 0
+         color: #eee
+         
+   // I would love to redo this withou absolute positioning      
+   .user
+      box-sizing: border-box
+      position: absolute
+      top: 5px
+      right: 15px
+       
+      .user-menu
+         position: relative
+         display: block
+         overflow: hidden
+         text-align: center
+         top: 0px
+         right: 4px
+         width: 40px
+         height: 40px
+         border-radius: 40px
+         border: 4px solid $c2
+         background: rgba($c2,.95)
+         box-shadow: 2px 2px 2px rgba($drk,.5)
+         transition: height .15s ease-in-out
+         
+         .plus
+            margin: 50px auto 0 auto
+            color: rgba(#eee, .92)
+            font-size: 2em
+            height: 30px
+            width: 30px
+            padding: 3px
+            border-radius: 50%
+            verticle-align: middle
+            text-shadow: 1px 1px 2px rgba($drk,.3)
+            &:hover
+               cursor: pointer
+            
+         
+      .um-height
+         height: 96px
+         transition: height .2s ease-in-out
+         
+      .profile-pic
+         display: block
+         position: fixed
+         top: 5px
+         right: 12.5px
+         background: url(https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/73.jpg)
+         background-size: cover
+         text-align: centre
+         height: 40px
+         width: 40px
+         border-radius: 50%
+         border: 4px solid $c2
+         box-shadow: 2px 2px 2px rgba($drk,.3)
+         &:hover
+            border-color: darken($c2, 5%)     
+            cursor: pointer
+            
+   .options
+      display: block
+      list-style: none
+      width: 100%
+      margin: 50px 0 0 0
+      padding: 0
+      box-shadow: 0 5px 2px rgba(#000, .2)
+      
+      .option
+         display: block
+         width: 100%
+         padding: 20px
+         color: #eee
+         box-shadow: inset 0 5px 2px rgba(#000, .2)
+         text-align: center
+         font-weight: 700
+         letter-spacing: 2px
+         box-sizing: border-box
+         transition: background-color .2s ease-in-out
+         a
+            text-decoration: none
+            color: inherit
+      
+      .option:nth-child(odd)
+         background: #C17487
+         &:hover
+            background: darken($c2, 5%)
+      .option:nth-child(even)
+         background: #675E77
+         &:hover
+            background: darken($c1, 5%)
+      
+   .pic
+      display: block
+      background: url("http://viewhdwallpaper.com/wp-content/uploads/2013/12/Cupcakes-Photography-HD-Wallpaper-1024x575.png") no-repeat
+      background-size: cover
+      height: 174px
+      
+      .pic-color
+         height: 100%
+         width: 100%
+         background: linear-gradient($c1, $c2) no-repeat
+         opacity: .5
+         box-shadow: inset 0 5px 2px rgba(#000, .2), 0 5px 2px rgba(#000, .2)
+         
+   .content
+      height: 450px
+      padding: 0 15px
+      line-height: 140%
+      color: rgba(#000, .86)
+      overflow: scroll
+      &::-webkit-scrollbar
+         width: .5em
+      &::-webkit-scrollbar-thumb
+         background-color: lighten($drk, 50%)
+      
+      .info
+         display: block
+            
+       
+   
+   
