@@ -4,13 +4,14 @@ $c1: #5C5B75
 $c2: #D6798B
 $drk: #3D454A
 
-body
+body{
    background: linear-gradient($c1, $c2) no-repeat
    height: 100vh
    overflow: hidden
    perspective: 700px
+}
 
-.phone
+.phone {
    width: 375px
    height: 667px
    position: absolute
@@ -24,21 +25,23 @@ body
    transform-style: preserve-3d
    transform: translate(-50%, -50%)
    transition: all 1s ease-in-out
-   
+}  
+
    //.loader
       background: linear-gradient($c1, $c2)
       position: absolute
       height: 100%
       width: 100%
    
-   .nav
+   .nav {
       height: 50px
       background: $drk
       padding: 3px
       position: absolute
       width: 100%
       z-index: 999
-      
+   }   
+   
       .burger 
          /*more hamburgers here: "http://codepen.io/Ridyal/pen/xwgQOo" */
          display: block
