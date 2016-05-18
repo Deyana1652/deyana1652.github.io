@@ -132,8 +132,8 @@ body {
 .phone .pic {
   display: block;
   background: url("pink.jpg") no-repeat;
-  background-size: 85%;
-  height: 174px;
+  background-size: cover;
+  height: 200px;
 }
 .phone .pic .pic-color {
   height: 100%;
